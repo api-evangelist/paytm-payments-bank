@@ -1,8 +1,22 @@
 aid: paytm-payments-bank
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/paytm-payments-bank.png
 name: Paytm Payments Bank
-description: 'Paytm Payments Bank is a company surfaced as a portfolio company of sapphire-ventures and
-  added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Paytm Payments Bank Limited is an Indian payments bank headquartered in Noida, offering
+  digital savings and current accounts, the Paytm Wallet, FASTag, debit cards, UPI and other retail
+  banking services to consumers and merchants. It operates as a distinct entity from Paytm''s merchant
+  payment-gateway developer platform (One97 Communications), and does not publish its own public
+  developer API surface. This profile was surfaced as a portfolio lead and enriched by the pipeline.'
 url: https://raw.githubusercontent.com/api-evangelist/paytm-payments-bank/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +24,20 @@ x-backed-by:
 - sapphire-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-note: 'No public developer API for the bank entity (paytmbank.com); the host is behind bot protection
+  (HTTP 403 to automated fetches) and exposes no /.well-known surface. The Paytm payment-gateway APIs
+  (Initiate Transaction, Refund, Payment Link, Subscription, etc.) are published by One97 Communications
+  at business.paytm.com/docs and belong to a separate company/entity, not attributed here.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Fintech
+- Payments
+- Banking
+- India
+- Digital Wallet
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/paytm-payments-bank-domain-security.yml
 - type: Website
   url: https://www.paytmbank.com/home
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
