@@ -28,7 +28,7 @@ x-note: 'No public developer API for the bank entity (paytmbank.com); the host i
   (HTTP 403 to automated fetches) and exposes no /.well-known surface. The Paytm payment-gateway APIs
   (Initiate Transaction, Refund, Payment Link, Subscription, etc.) are published by One97 Communications
   at business.paytm.com/docs and belong to a separate company/entity, not attributed here.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
